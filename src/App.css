@@ -1,0 +1,176 @@
+/* App container */
+.quiz-container {
+  background-color: #00000076; /* Semi-transparent black background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header */
+.quiz-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  background-color: #131324; /* Darker background for timer */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Question section */
+.quiz-question {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #131324; /* Darker background for question section */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Question number */
+.quiz-question h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Question text */
+.quiz-question h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Answer buttons container */
+.answer-buttons {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for options */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Answer buttons */
+.answer-button {
+  background-color: #1e1e2d; /* Slightly lighter background for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: left;
+}
+
+.answer-button:hover {
+  background-color: #2a2a3d; /* Hover effect for buttons */
+}
+
+.answer-button.selected {
+  background-color: #4e0eff; /* Highlight selected answer */
+  border: 1px solid #997af0;
+}
+
+/* Navigation button */
+.next-button {
+  background-color: #4e0eff; /* Button color */
+  border: 0.1rem solid #997af0;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.next-button:hover {
+  background-color: #3b00e0; /* Hover effect for button */
+}
+
+/* Restart button */
+.restart-button {
+  background-color: #4e0eff; /* Restart button color */
+  border: 0.1rem solid #997af0;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.restart-button:hover {
+  background-color: #3b00e0; /* Hover effect for restart button */
+}
+
+/* Result page */
+.main-result{
+  background-color: #00000076; /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+.result-container {
+  width: 500px;
+  background-color: #131324; /* Darker background for question section */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   padding: 20px;
+  border-radius: 10px;
+   margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.result-container .score {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.result-container .restart-button {
+  background-color: #4e0eff;
+  border: 0.1rem solid #997af0;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result-container .restart-button:hover {
+  background-color: #3b00e0;
+}
